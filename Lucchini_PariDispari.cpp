@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Pari, Dispari  dsadadsads
+//  Pari, Dispari
 //
 //  Created by Alberto Lucchini on 1/8/25.
 //
