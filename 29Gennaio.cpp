@@ -10,19 +10,19 @@
 
 using namespace std;
 
-void initVet(int *vet, int ne){
+void init_vet(int *vet, int ne){
     for (int i=0; i < ne; i++) {
         vet[i] = 0;
     }
 }
 
-void assVet(int *vet, int ne){
+void Carica_Ele(int *vet, int ne){
     for (int i=0; i < ne; i++) {
         vet[i] = rand()%71 + 10;
     }
 }
 
-void stampaVet(int *vet, int ne){
+void Stampa_Ele(int *vet, int ne){
     cout << "Elementi: ";
     for (int i=0; i < ne; i++) {
         if(vet[i] < 10)
@@ -56,7 +56,7 @@ int trovoVetMax(int *vet, int ne, int x){
     return conta;
 }
 
-int trovoVetUguali(int *vet, int ne, int x){
+int Ricerca_Ele(int *vet, int ne, int x){
     int val = vet[x];
     int pos = 100;
     for (int i = 0; i < pos; i++) {
@@ -76,13 +76,13 @@ int main() {
     
     x = rand() % (NE + 1);
     
-    initVet(vet, NE);
-    assVet(vet, NE);
-    stampaVet(vet, NE);
+    init_vet(vet, NE);
+    Carica_Ele(vet, NE);
+    Stampa_Ele(vet, NE);
     cout << "\nx = " << x;
     cout << "\n\nValori minori di " << vet[x] << ": " << trovoVetMin(vet, NE, x);
     cout << "\nValori maggiori di " << vet[x] << ": " << trovoVetMax(vet, NE, x);
-    cout << "\nPosizione del primo valore uguale a " << vet[x] << ": " << trovoVetUguali(vet, NE, x);
+    cout << "\nPosizione del primo valore uguale a " << vet[x] << ": " << Ricerca_Ele(vet, NE, x);
     cout << "\n";
     
     return 0;
