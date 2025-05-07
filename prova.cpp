@@ -22,7 +22,6 @@
 
 #include <iostream>
 #include <ctime>
-#include <stdlib>
 #include <windows.h>
 
 using namespace std;
@@ -81,7 +80,7 @@ void ordina_vet(int v[], int ne){
 
 void stampa_vet(int vet[], int vet2[], int ne){
     for (int i = 0; i < 10; i++) {
-        x = 0
+        x = 0;
         for (int j = 0; j < 10; i++) {
             y = i;
             gotoxy(x, y);
