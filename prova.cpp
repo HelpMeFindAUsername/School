@@ -1,3 +1,24 @@
+//
+//  main.cpp
+//  7mag
+//
+//  Created by Alberto Lucchini on 5/7/25.
+/*
+ array 100 el
+ input rand
+
+ stamp_vet
+ 5 spazi in gotoxy tra un elemento e l'altro
+ ordin_vet => decrescente
+ richiama_vet
+
+ menù iniziale
+ 1 carica dati
+ 2 stampa dati
+ 3 ordina dati e stampa dati
+ 4 esci
+ */
+
 
 #include <iostream>
 #include <ctime>
@@ -11,15 +32,29 @@ int vet[NE], vet_ord[NE];
 int x = 0, y = 0;
 int incx=3;
 
-void carica_vet();
-void stampa_vet();
-void ordina_vet();
+void carica_vet(int vet[], int vet2[], int ne);
+void stampa_vet(int vet[], int vet2[], int ne);
+void ordina_vet(int vet[], int ne);
 int menu();
 
 
 
 int main(){
     srand(time(0));
+    switch (menu()) {
+        case 1:
+            carica_vet(vet, vet_ord, NE);
+            break;
+        case 2:
+            stampa_vet(vet, vet_ord, NE);
+            break;
+        case 3:
+            ordina_vet(vet_ord, NE);
+            break;
+        
+        default:
+            break;
+    }
     return 0;
 }
 
