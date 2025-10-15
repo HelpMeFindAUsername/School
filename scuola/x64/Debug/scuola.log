@@ -1,0 +1,12 @@
+﻿  5Feb.cpp
+C:\Users\zizzo\OneDrive\Desktop\Koding\School\cpp\5Feb.cpp(56,17): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\zizzo\OneDrive\Desktop\Koding\School\cpp\5Feb.cpp(90,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\zizzo\OneDrive\Desktop\Koding\School\cpp\5Feb.cpp(87,28): warning C4101: 'vetD': unreferenced local variable
+C:\Users\zizzo\OneDrive\Desktop\Koding\School\cpp\5Feb.cpp(87,18): warning C4101: 'vetP': unreferenced local variable
+  BubbleSort.cpp
+C:\Users\zizzo\OneDrive\Desktop\Koding\School\cpp\BubbleSort.cpp(98,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  prova.cpp
+C:\Users\zizzo\OneDrive\Desktop\Koding\School\cpp\prova.cpp(42,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\zizzo\OneDrive\Desktop\Koding\School\cpp\prova.cpp(86,13): error C3861: 'gotoxy': identifier not found
+C:\Users\zizzo\OneDrive\Desktop\Koding\School\cpp\prova.cpp(98,13): error C3861: 'gotoxy': identifier not found
+  Generating Code...

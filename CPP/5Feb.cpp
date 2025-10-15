@@ -88,9 +88,9 @@ int main() {
     int contaP = 0, contaD = 0;
     
     srand(time(0));
-    xq
     
-    cout << "Vet: "
+    
+    cout << "Vet: ";
     for(int i = 0; i < NE; i++){
         cout << i << ":" <<vet[i] << "     ";
     }
