@@ -1,5 +1,4 @@
 //Alberto Lucchini
-//Progetto Autosalone
 #include <iostream>
 #include <iomanip>
 #include <windows.h>
