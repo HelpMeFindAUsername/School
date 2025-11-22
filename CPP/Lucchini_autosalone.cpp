@@ -22,8 +22,6 @@ struct Auto{
     } acq;
 };
 
-void gotoxy(int x, int y);
-
 int menu();
 
 void initVettAuto(Auto autosalone[], int dim);
@@ -67,15 +65,6 @@ int main(){
     }while(scelta != 0);
 
     return 0;
-}
-
-void gotoxy(int x, int y){
-     HANDLE HConsole;
-     CONSOLE_SCREEN_BUFFER_INFO ConsoleInfo;
-     HConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-     ConsoleInfo.dwCursorPosition.X = x;
-     ConsoleInfo.dwCursorPosition.Y = y;
-     SetConsoleCursorPosition(HConsole,ConsoleInfo.dwCursorPosition);
 }
 
 void initVettAuto(Auto autosalone[], int dim){
@@ -139,7 +128,7 @@ void insAuto(Auto autosalone[], int &dim){
 }
 
 void visCognomi(Auto autosalone[], int dim, int cilindrataMin){
-    bool found = false;
+    bool t = false;
     system("cls");
     cout << "Auto con cilindrata superiore a " << cilindrataMin << " cc:\n";
     cout << left << setw(15) << "Marca" << setw(12) << "Cilindrata" << setw(8) << "Anno" << setw(15) << "Nome" << setw(15) << "Cognome" << setw(20) << "Cod.Fiscale" << endl;
@@ -154,10 +143,10 @@ void visCognomi(Auto autosalone[], int dim, int cilindrataMin){
                  << setw(15) << autosalone[i].acq.cognome
                  << setw(20) << autosalone[i].acq.codiceFiscale
                  << endl;
-            found = true;
+            t = true;
         }
     }
-    if(!found){
+    if(!t){
         cout << "\nNessuna auto trovata con cilindrata superiore a " << cilindrataMin << " cc.\n";
     }
     cout << "Digita 0 per tornare al menu'...";
