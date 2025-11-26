@@ -23,6 +23,8 @@ struct Auto{
 
 int menu();
 
+
+
 void initVettAuto(Auto autosalone[], int dim);
 
 void insAuto(Auto autosalone[], int &dim);
@@ -135,7 +137,7 @@ void visCognomi(Auto autosalone[], int dim, int cilindrataMin){
 
     for(int i = 0; i < dim; i++){
         if(autosalone[i].cilindrata > cilindrataMin){
-            cout << left << setw(15) << autosalone[i].marca 
+            cout << left << setw(15) << autosalone[i].marca
                  << setw(12) << autosalone[i].cilindrata 
                  << setw(8) << autosalone[i].annoImmatricolazione 
                  << setw(15) << autosalone[i].acq.nome
