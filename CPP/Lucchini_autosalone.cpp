@@ -23,11 +23,9 @@ struct Auto{
 
 int menu();
 
-
-
 void initVettAuto(Auto autosalone[], int dim);
 
-void insAuto(Auto autosalone[], int &dim);
+void insAuto(Auto autosalone[], int dim);
 void visCognomi(Auto autosalone[], int dim, int cilindrataMin);
 void visAutoPerAnno(Auto autosalone[], int dim, int anno);
 void visTabella(Auto autosalone[], int dim);
@@ -38,7 +36,7 @@ int main(){
     int anno;
     const int cilindrataMin = 1500;
 
-    initVettAuto(autosalone, DIM);
+   // initVettAuto(autosalone, DIM);
 
     do{
         scelta = menu();
@@ -92,7 +90,7 @@ int menu(){
     return scelta;
 }
 
-void insAuto(Auto autosalone[], int &dim){
+void insAuto(Auto autosalone[], int dim){
     int numAuto;
     cout << "Quante auto vuoi inserire? Max " << DIM - dim << ": ";
     cin >> numAuto;
@@ -185,7 +183,7 @@ void visTabella(Auto autosalone[], int dim){
     system("cls");
     cout << left << setw(15) << "Marca" << setw(12) << "Cilindrata" << setw(8) << "Anno" << setw(15) << "Nome" << setw(15) << "Cognome" << setw(20) << "Cod.Fiscale" << endl;
     cout << "--------------------------------------------------------------------------------" << endl;
-    for(int i = 0; i < dim; i++){
+    for(int i = 0; i < DIM; i++){
         cout << left << setw(15) << autosalone[i].marca 
              << setw(12) << autosalone[i].cilindrata 
              << setw(8) << autosalone[i].annoImmatricolazione 

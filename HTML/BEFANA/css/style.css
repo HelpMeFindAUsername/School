@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(3, 19, 52);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font: bold 48px Arial, sans-serif;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    font: bold 24px Arial, sans-serif;
+    border: 5px whitesmoke solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+a:hover {
+    background-color: rgba(245, 245, 245, 0.753);
+    color: rgb(3, 19, 52);
+    cursor: pointer;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font: 20px Arial, sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
