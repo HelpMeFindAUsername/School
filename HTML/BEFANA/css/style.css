@@ -33,7 +33,7 @@ label {
     cursor: pointer;
 }
 
-#nome, #cognome, #email {
+#nome, #cognome, #email, #data {
     display: block;
     margin: 10px auto;
     padding: 10px;
@@ -41,7 +41,7 @@ label {
     font: 20px Arial, sans-serif;
 }
 
-#nome:hover, #cognome:hover, #email:hover {
+#nome:hover, #cognome:hover, #email:hover, #data:hover {
     border: 2px solid rgb(245, 245, 245);
 }
 

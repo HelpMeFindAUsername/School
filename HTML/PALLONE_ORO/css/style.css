@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+#Titolo{
+    color: gold;
+    text-align: center;
+    font: bold;
+    font-family: fantasy;
+    margin-top: 20;
+}
+
+#tabW{
+    border: 2px gold;
+    font-size: 20;
+    color: white;
+}
